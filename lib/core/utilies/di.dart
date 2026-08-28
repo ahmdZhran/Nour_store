@@ -7,7 +7,7 @@ import 'package:nour_store/core/languages/get_saved_locale_usecase.dart';
 import 'package:nour_store/core/languages/locale_cubit.dart';
 import 'package:nour_store/core/languages/locale_repository.dart';
 import 'package:nour_store/core/languages/save_locale_usecase.dart';
-import 'package:nour_store/core/utilies/google_auth_config.dart';
+
 
 
 final getIt = GetIt.instance;

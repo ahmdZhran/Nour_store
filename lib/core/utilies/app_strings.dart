@@ -300,4 +300,14 @@ class AppStrings {
 
   // Nav tabs
   static const String home = 'home';
+
+  // Main selection
+  static const String mainSelectionTitle = 'main_selection_title';
+  static const String mainSelectionSubtitle = 'main_selection_subtitle';
+  static const String onlineStore = 'online_store';
+  static const String onlineStoreDesc = 'online_store_desc';
+  static const String homeServices = 'home_services';
+  static const String homeServicesDesc = 'home_services_desc';
+  static const String store = 'store';
+  static const String services = 'services';
 }

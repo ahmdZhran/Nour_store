@@ -9,19 +9,19 @@ class ToastHelper {
   static const Duration _defaultDuration = Duration(seconds: 4);
 
   static void showErrorToast(String message) {
-    _show(
-      message: message,
-      icon: Icons.error_outline_rounded,
-      accent: AppColors.tertiary,
-      duration: _defaultDuration,
-    );
+    // _show(
+    //   message: message,
+    //   icon: Icons.error_outline_rounded,
+    //   // accent: ThemeColors.tertiary,
+    //   duration: _defaultDuration,
+    // );
   }
 
   static void showSuccessToast(String message) {
     _show(
       message: message,
       icon: Icons.check_circle_outline_rounded,
-      accent: AppColors.secondary,
+      accent: ThemeColors.goldPrimary,
       duration: _defaultDuration,
     );
   }
@@ -39,7 +39,7 @@ class ToastHelper {
     _show(
       message: message,
       icon: Icons.info_outline_rounded,
-      accent: AppColors.primary,
+      accent: ThemeColors.goldPrimary,
       duration: _defaultDuration,
     );
   }
@@ -57,7 +57,7 @@ class ToastHelper {
         content: _ToastCard(
           message: message,
           icon: Icons.check_circle_outline_rounded,
-          accent: AppColors.secondary,
+          accent: ThemeColors.goldPrimary,
           actionLabel: 'Open Gmail',
           onAction: () {},
         ),
@@ -115,9 +115,9 @@ class _ToastCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
         decoration: BoxDecoration(
-          color: AppColors.surfaceContainerHigh,
+          color: ThemeColors.whiteColor,
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: AppColors.outlineVariant),
+          border: Border.all(color: ThemeColors.greyColorE9),
           boxShadow: [
             BoxShadow(
               color: Colors.black.withValues(alpha: 0.45),
@@ -143,7 +143,7 @@ class _ToastCard extends StatelessWidget {
               child: Text(
                 message,
                 style: const TextStyle(
-                  color: AppColors.onBackground,
+                  color: ThemeColors.whiteColor,
                   fontSize: 13.5,
                   fontWeight: FontWeight.w500,
                   height: 1.35,

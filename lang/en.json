@@ -1,0 +1,12 @@
+{
+  "app_name": "Nour Store",
+  "main_selection_title": "Choose Service",
+  "main_selection_subtitle": "What would you like to do today?",
+  "online_store": "Online Store",
+  "online_store_desc": "Shop from a variety of products",
+  "home_services": "Home Services",
+  "home_services_desc": "Plumbing, electricity, and more",
+  "coming_soon": "Coming Soon",
+  "store": "Store",
+  "services": "Services"
+}
