@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nour_store/core/responsive/responsive_sizing.dart';
 import 'package:nour_store/core/theme/theme_colors.dart';
 import 'package:nour_store/core/utilies/app_text_styles.dart';
 import 'package:nour_store/core/widgets/directional_icon.dart';
@@ -21,6 +21,14 @@ class SelectionCardWidget extends StatelessWidget {
   final bool isDark;
 
   static const double _borderRadius = 16;
+  static const double _iconContainerSize = 48;
+  static const double _iconSize = 24;
+  static const double _chevronSize = 20;
+  static const double _contentPadding = 16;
+  static const double _iconGap = 14;
+  static const double _titleDescriptionGap = 4;
+  static const double _titleFontSize = 17;
+  static const double _descriptionFontSize = 13;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +38,8 @@ class SelectionCardWidget extends StatelessWidget {
         isDark ? ThemeColors.darkTextSecondary : ThemeColors.lightTextSecondary;
     final borderColor =
         isDark ? ThemeColors.lightBorder : ThemeColors.lightCardBorder;
-    final radius = BorderRadius.circular(_borderRadius.r);
+    final radius = BorderRadius.circular(context.rr(_borderRadius));
+    final iconContainerSize = context.rw(_iconContainerSize);
 
     return Material(
       color: Colors.transparent,
@@ -51,27 +60,27 @@ class SelectionCardWidget extends StatelessWidget {
           ),
           child: Padding(
             padding: EdgeInsetsDirectional.only(
-              start: 16.w,
-              end: 16.w,
-              top: 16.h,
-              bottom: 16.h,
+              start: context.rw(_contentPadding),
+              end: context.rw(_contentPadding),
+              top: context.rh(_contentPadding),
+              bottom: context.rh(_contentPadding),
             ),
             child: Row(
               children: [
                 Container(
-                  width: 48.w,
-                  height: 48.w,
+                  width: iconContainerSize,
+                  height: iconContainerSize,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: ThemeColors.goldPrimary.withValues(alpha: 0.12),
                   ),
                   child: Icon(
                     icon,
-                    size: 24.sp,
+                    size: context.rsp(_iconSize),
                     color: ThemeColors.goldPrimary,
                   ),
                 ),
-                SizedBox(width: 14.w),
+                SizedBox(width: context.rw(_iconGap)),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -79,26 +88,28 @@ class SelectionCardWidget extends StatelessWidget {
                     children: [
                       Text(
                         title,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
                         style: AppTextStyles.cardTitle.copyWith(
                           color: textPrimary,
-                          fontSize: 17.sp,
+                          fontSize: context.rsp(_titleFontSize),
                         ),
                       ),
-                      SizedBox(height: 4.h),
+                      SizedBox(height: context.rh(_titleDescriptionGap)),
                       Text(
                         description,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: AppTextStyles.cardDescription.copyWith(
                           color: textSecondary,
-                          fontSize: 13.sp,
+                          fontSize: context.rsp(_descriptionFontSize),
                         ),
                       ),
                     ],
                   ),
                 ),
                 ForwardChevronIcon(
-                  size: 20.sp,
+                  size: context.rsp(_chevronSize),
                   color: ThemeColors.goldPrimary.withValues(alpha: 0.7),
                 ),
               ],
