@@ -308,6 +308,15 @@ class AppStrings {
   static const String onlineStoreDesc = 'online_store_desc';
   static const String homeServices = 'home_services';
   static const String homeServicesDesc = 'home_services_desc';
+  static const String usedProductsRealEstate = 'used_products_real_estate';
+  static const String usedProductsRealEstateDesc =
+      'used_products_real_estate_desc';
+  static const String onlineStoreAction = 'online_store_action';
+  static const String onlineStoreActionDesc = 'online_store_action_desc';
+  static const String homeServicesAction = 'home_services_action';
+  static const String homeServicesActionDesc = 'home_services_action_desc';
+  static const String marketplaceAction = 'marketplace_action';
+  static const String marketplaceActionDesc = 'marketplace_action_desc';
   static const String store = 'store';
   static const String services = 'services';
 }

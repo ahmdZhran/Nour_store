@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nour Store - Gateway</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#690005",
+                        "background": "#131313",
+                        "surface-container-high": "#2a2a2a",
+                        "tertiary-container": "#d5a74c",
+                        "secondary-fixed": "#ffdf97",
+                        "on-primary-fixed": "#261a00",
+                        "inverse-surface": "#e5e2e1",
+                        "outline-variant": "#4e4636",
+                        "primary": "#f2c35b",
+                        "on-tertiary-fixed-variant": "#5d4200",
+                        "on-secondary-fixed": "#251a00",
+                        "outline": "#9a8f7d",
+                        "on-primary": "#402d00",
+                        "secondary-container": "#775a00",
+                        "error": "#ffb4ab",
+                        "surface-container-highest": "#353534",
+                        "on-secondary": "#3e2e00",
+                        "inverse-on-surface": "#313030",
+                        "surface-container": "#201f1f",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-tint": "#eec058",
+                        "primary-fixed-dim": "#eec058",
+                        "error-container": "#93000a",
+                        "surface": "#131313",
+                        "on-tertiary-container": "#573d00",
+                        "inverse-primary": "#795900",
+                        "primary-container": "#d4a843",
+                        "tertiary-fixed-dim": "#efbf61",
+                        "on-secondary-fixed-variant": "#5a4400",
+                        "on-background": "#e5e2e1",
+                        "on-primary-fixed-variant": "#5b4300",
+                        "secondary": "#e8c265",
+                        "on-tertiary": "#412d00",
+                        "tertiary-fixed": "#ffdea5",
+                        "on-surface-variant": "#d2c5b1",
+                        "secondary-fixed-dim": "#e8c265",
+                        "on-secondary-container": "#fcd475",
+                        "on-surface": "#e5e2e1",
+                        "surface-bright": "#3a3939",
+                        "on-primary-container": "#553e00",
+                        "surface-variant": "#353534",
+                        "on-error-container": "#ffdad6",
+                        "surface-dim": "#131313",
+                        "on-tertiary-fixed": "#261900",
+                        "primary-fixed": "#ffdf9f",
+                        "tertiary": "#f3c264",
+                        "surface-container-low": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-margin": "20px",
+                        "section-gap": "32px",
+                        "stack-lg": "24px",
+                        "stack-md": "16px",
+                        "gutter-md": "16px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["IBM Plex Sans Arabic"],
+                        "headline-md": ["IBM Plex Sans Arabic"],
+                        "headline-lg": ["IBM Plex Sans Arabic"],
+                        "headline-lg-mobile": ["IBM Plex Sans Arabic"],
+                        "label-lg": ["IBM Plex Sans Arabic"],
+                        "label-sm": ["IBM Plex Sans Arabic"],
+                        "display-lg": ["IBM Plex Sans Arabic"],
+                        "headline-sm": ["IBM Plex Sans Arabic"],
+                        "body-lg": ["IBM Plex Sans Arabic"]
+                    },
+                    "fontSize": {
+                        "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+                        "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "600" }],
+                        "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "display-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen antialiased flex flex-col items-center">
+<div class="w-full max-w-md mx-auto pt-16 pb-8">
+<header class="px-container-margin mb-section-gap text-center">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-stack-sm tracking-tight">اختر الخدمة</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">ماذا تريد أن تفعل اليوم؟</p>
+</header>
+<main class="px-container-margin flex flex-col gap-gutter-md">
+<div class="relative h-[190px] w-full rounded-[20px] overflow-hidden shadow-2xl border border-outline-variant/30 group cursor-pointer bg-surface-container">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A cinematic, shallow depth of field shot of a person's hands elegantly interacting with a modern laptop, browsing a high-end online fashion store. The lighting is moody and dramatic with deep black shadows and a soft, warm golden rim light illuminating the hands and keyboard, reflecting a premium dark-mode luxury aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDDsHIOxgxhUskLqpbGIldf0-deMmKQCCuO0yYRg8NzuurwdjHjLhAvcw5UbAw2WLe45HElyREIy6VUticPPtpbTFtJYNGsPcpmQnoFSFUPLUg18goAKbpYI9wXbOrgJcqbhGAOHar2aWaxJdeCvEK7D9fCBEqVELpdxakepcGPDH3VTO3nHM8tHOfTOM_2R2NnIl9Hvlkyp9ULililvtavj28GEQFVcoH_h1FXjaKmwORLLOpPx9q-')">
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80"></div>
+</div>
+<div class="absolute top-4 left-4 right-4 h-12 bg-surface/20 backdrop-blur-xl border border-white/10 rounded-[12px] flex items-center justify-center z-10">
+<span class="font-headline-sm text-headline-sm text-white drop-shadow-md">التسوق الإلكتروني</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-[72px] bg-[#1a1a1a]/95 backdrop-blur-md px-4 flex items-center justify-between border-t border-white/5 z-10 transition-colors group-hover:bg-[#222222]/95">
+<div class="flex items-center gap-3">
+<div class="w-[44px] h-[44px] rounded-[12px] bg-primary-container flex items-center justify-center shadow-[0_0_15px_rgba(212,168,67,0.2)]">
+<span class="material-symbols-outlined text-on-primary-container text-[24px]" style="font-variation-settings: 'FILL' 0;">shopping_cart</span>
+</div>
+<div class="flex flex-col justify-center">
+<span class="font-label-lg text-label-lg text-white mb-0.5">تسوق كل ما تحتاجه</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">اكتشف منتجاتنا</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container/50 border border-outline-variant/30 group-hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 0;">chevron_left</span>
+</div>
+</div>
+</div>
+<div class="relative h-[190px] w-full rounded-[20px] overflow-hidden shadow-2xl border border-outline-variant/30 group cursor-pointer bg-surface-container">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A highly detailed, cinematic close-up of a skilled craftsman's hands working on an electrical panel with professional tools. The scene is illuminated by dramatic, high-contrast lighting with deep, layered black backgrounds and a strong, warm golden spotlight focusing on the action, conveying reliability, expertise, and a premium service experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeXDBwc0ctAKfkUx1R3ySrzU798BIGku3LqoNRz5fAWZ6AcdlKohe5U1N681jGdp1GEcOpwVSHiIRD_Cg5TH01_pVEPV3dr4Sm4Byb1SyfvKuvICK2UJ3ujklVBDuMRzBb5NBzidtCBt09-Ppx5ecN0DuXd2XMN-WhKWI_YU8Nano44fZMNlYpw_oBASWpGrdugW9jmCKklujABY-yWwUrFt89dSaFhiXvfae88rY2MZbeaPedEEpJ')">
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80"></div>
+</div>
+<div class="absolute top-4 left-4 right-4 h-12 bg-surface/20 backdrop-blur-xl border border-white/10 rounded-[12px] flex items-center justify-center z-10">
+<span class="font-headline-sm text-headline-sm text-white drop-shadow-md">الخدمات المنزلية</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-[72px] bg-[#1a1a1a]/95 backdrop-blur-md px-4 flex items-center justify-between border-t border-white/5 z-10 transition-colors group-hover:bg-[#222222]/95">
+<div class="flex items-center gap-3">
+<div class="w-[44px] h-[44px] rounded-[12px] bg-primary-container flex items-center justify-center shadow-[0_0_15px_rgba(212,168,67,0.2)]">
+<span class="material-symbols-outlined text-on-primary-container text-[24px]" style="font-variation-settings: 'FILL' 0;">build</span>
+</div>
+<div class="flex flex-col justify-center">
+<span class="font-label-lg text-label-lg text-white mb-0.5">تصفح خدماتنا</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">اكتشف خدماتنا المختلفة</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container/50 border border-outline-variant/30 group-hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 0;">chevron_left</span>
+</div>
+</div>
+</div>
+<div class="relative h-[190px] w-full rounded-[20px] overflow-hidden shadow-2xl border border-outline-variant/30 group cursor-pointer bg-surface-container">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Breathtaking aerial drone photography of a luxurious, high-end suburban neighborhood at twilight. The scene showcases modern homes nestled amongst trees, with warm, inviting golden lights glowing from windows against the deep, rich blues and blacks of the evening sky, perfectly capturing a premium real estate aesthetic in dark mode." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA1WdyBRM64QHDg15ulkiX8FN_DUzmUFp8-Lgme5Du98cY-luOEQGn5D8t9SRNc33IwG9nbffhapOo7EE1g3boQ4z1C1OQZda8eOghYSNySBVQRQfpfMNFQ1U-8GSYm2aebg6sZGHC5RF8HhoPY6kXc1HmhX4EfUkFKzDJNNk9JAftW9cwxcHJe_I2sW04NBjo_xtnc9Flb12srR8dSeLLnvIg5sFbvxP4gNjJ1I0Pfmjk2qmXtprwe')">
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80"></div>
+</div>
+<div class="absolute top-4 left-4 right-4 h-12 bg-surface/20 backdrop-blur-xl border border-white/10 rounded-[12px] flex items-center justify-center z-10">
+<span class="font-headline-sm text-headline-sm text-white drop-shadow-md">المنتجات المستعملة والعقارات</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-[72px] bg-[#1a1a1a]/95 backdrop-blur-md px-4 flex items-center justify-between border-t border-white/5 z-10 transition-colors group-hover:bg-[#222222]/95">
+<div class="flex items-center gap-3">
+<div class="w-[44px] h-[44px] rounded-[12px] bg-primary-container flex items-center justify-center shadow-[0_0_15px_rgba(212,168,67,0.2)]">
+<span class="material-symbols-outlined text-on-primary-container text-[24px]" style="font-variation-settings: 'FILL' 0;">domain</span>
+</div>
+<div class="flex flex-col justify-center">
+<span class="font-label-lg text-label-lg text-white mb-0.5">اختر ما تريده</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تصفح واختر ما تريده</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container/50 border border-outline-variant/30 group-hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 0;">chevron_left</span>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

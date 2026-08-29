@@ -9,4 +9,5 @@ class Routes {
   static const String mainSelection = '/main-selection';
   static const String storeHome = '/store-home';
   static const String servicesHome = '/services-home';
+  static const String marketplaceHome = '/marketplace-home';
 }
