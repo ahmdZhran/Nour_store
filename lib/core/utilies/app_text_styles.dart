@@ -93,4 +93,44 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
     color: ThemeColors.darkTextSecondary,
   );
+
+  static TextStyle sectionTitle = TextStyle(
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle servicesGreetingName = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle servicesGreetingSubtitle = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle servicesSearchHint = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle servicesNavLabel = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle servicesCategoryLabel = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle servicesCraftsmanName = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle servicesCraftsmanTitle = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w500,
+  );
 }

@@ -319,4 +319,33 @@ class AppStrings {
   static const String marketplaceActionDesc = 'marketplace_action_desc';
   static const String store = 'store';
   static const String services = 'services';
+
+  // Services dashboard
+  static const String servicesGreeting = 'services_greeting';
+  static const String servicesGreetingName = 'services_greeting_name';
+  static const String servicesSearchHint = 'services_search_hint';
+  static const String servicesHeroHeadline = 'services_hero_headline';
+  static const String servicesHeroSubtitle = 'services_hero_subtitle';
+  static const String servicesCategoriesTitle = 'services_categories_title';
+  static const String servicesFeaturedCraftsmenTitle =
+      'services_featured_craftsmen_title';
+  static const String servicesNavHome = 'services_nav_home';
+  static const String servicesNavCategories = 'services_nav_categories';
+  static const String servicesNavOrders = 'services_nav_orders';
+  static const String servicesNavProfile = 'services_nav_profile';
+  static const String servicesCategoryAdvertising =
+      'services_category_advertising';
+  static const String servicesCategoryArchitect =
+      'services_category_architect';
+  static const String servicesCategoryCarpentry =
+      'services_category_carpentry';
+  static const String servicesCategoryPlumbing = 'services_category_plumbing';
+  static const String servicesCategoryElectrical =
+      'services_category_electrical';
+  static const String servicesCraftsman1Name = 'services_craftsman_1_name';
+  static const String servicesCraftsman1Title = 'services_craftsman_1_title';
+  static const String servicesCraftsman2Name = 'services_craftsman_2_name';
+  static const String servicesCraftsman2Title = 'services_craftsman_2_title';
+  static const String servicesCraftsman3Name = 'services_craftsman_3_name';
+  static const String servicesCraftsman3Title = 'services_craftsman_3_title';
 }
