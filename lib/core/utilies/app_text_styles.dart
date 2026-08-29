@@ -78,4 +78,19 @@ class AppTextStyles {
     fontSize: 22.sp,
     fontWeight: FontWeight.w600,
   );
+
+  static TextStyle heroOverlayTitle = const TextStyle(
+    fontWeight: FontWeight.w600,
+    color: ThemeColors.whiteColor,
+  );
+
+  static TextStyle heroActionTitle = const TextStyle(
+    fontWeight: FontWeight.w600,
+    color: ThemeColors.whiteColor,
+  );
+
+  static TextStyle heroActionSubtitle = const TextStyle(
+    fontWeight: FontWeight.w500,
+    color: ThemeColors.darkTextSecondary,
+  );
 }
