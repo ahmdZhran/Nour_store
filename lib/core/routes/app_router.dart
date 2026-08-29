@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nour_store/core/routes/app_page_transitions.dart';
 import 'package:nour_store/core/routes/routes.dart';
 import 'package:nour_store/features/main_selection/presentation/screens/main_selection_screen.dart';
 import 'package:nour_store/features/marketplace/presentation/screens/marketplace_home_screen.dart';
@@ -19,7 +20,7 @@ class AppRouter {
           builder: (_) => const StoreHomeScreen(),
         );
       case Routes.servicesHome:
-        return MaterialPageRoute(
+        return AppPageTransitions.fadeSlideUp(
           settings: settings,
           builder: (_) => const ServicesHomeScreen(),
         );
