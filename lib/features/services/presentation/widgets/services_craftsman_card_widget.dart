@@ -4,6 +4,7 @@ import 'package:nour_store/core/responsive/responsive_sizing.dart';
 import 'package:nour_store/core/theme/theme_colors.dart';
 import 'package:nour_store/core/utilies/app_text_styles.dart';
 import 'package:nour_store/features/services/presentation/models/services_dashboard_mock_data.dart';
+import 'package:nour_store/features/services/presentation/utils/craftsman_profile_hero_tags.dart';
 
 class ServicesCraftsmanCardWidget extends StatelessWidget {
   const ServicesCraftsmanCardWidget({
@@ -51,9 +52,16 @@ class ServicesCraftsmanCardWidget extends StatelessWidget {
             children: [
               SizedBox(
                 height: context.rh(_imageHeight),
-                child: Image.asset(
-                  craftsman.photoAsset,
-                  fit: BoxFit.cover,
+                child: Hero(
+                  tag: CraftsmanProfileHeroTags.photo(craftsman.id),
+                  child: Material(
+                    color: Colors.transparent,
+                    child: Image.asset(
+                      craftsman.photoAsset,
+                      fit: BoxFit.cover,
+                      width: double.infinity,
+                    ),
+                  ),
                 ),
               ),
               Expanded(

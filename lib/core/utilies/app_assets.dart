@@ -13,4 +13,13 @@ class AppAssets {
   static const String servicesCraftsman1 = 'assets/images/services/craftsman_1.jpg';
   static const String servicesCraftsman2 = 'assets/images/services/craftsman_2.jpg';
   static const String servicesCraftsman3 = 'assets/images/services/craftsman_3.jpg';
+
+  static const String craftsmanProfileAvatar =
+      'assets/images/craftsman_profile/avatar.jpg';
+  static const String craftsmanProfilePortfolio1 =
+      'assets/images/craftsman_profile/portfolio_1.jpg';
+  static const String craftsmanProfilePortfolio2 =
+      'assets/images/craftsman_profile/portfolio_2.jpg';
+  static const String craftsmanProfilePortfolio3 =
+      'assets/images/craftsman_profile/portfolio_3.jpg';
 }
