@@ -38,5 +38,16 @@
   "services_craftsman_2_name": "Khaled Saad",
   "services_craftsman_2_title": "Specialist carpenter",
   "services_craftsman_3_name": "Omar Farouk",
-  "services_craftsman_3_title": "Electrician"
+  "services_craftsman_3_title": "Electrician",
+  "craftsman_profile_about_title": "About",
+  "craftsman_profile_portfolio_title": "Portfolio",
+  "craftsman_profile_location": "Saudi Arabia - Makkah - Riyadh",
+  "craftsman_profile_member_since": "Member since 2025",
+  "craftsman_profile_specialty_furniture": "Furniture",
+  "craftsman_profile_specialty_carpentry": "Carpentry",
+  "craftsman_profile_specialty_electrical": "Electrical",
+  "craftsman_profile_about_ahmed": "A professional carpenter with experience in designing and building furniture and woodwork with precision and durable quality. I transform raw wood into practical, elegant pieces that balance beauty and strength.",
+  "craftsman_profile_about_khaled": "A specialist carpenter in home and office furniture design and execution, with a focus on finishing details and on-time delivery.",
+  "craftsman_profile_about_omar": "A certified electrician providing safe, reliable maintenance and wiring solutions for homes and commercial projects.",
+  "craftsman_profile_request_quote": "Request a quote"
 }

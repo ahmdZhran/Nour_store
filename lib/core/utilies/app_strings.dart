@@ -348,4 +348,24 @@ class AppStrings {
   static const String servicesCraftsman2Title = 'services_craftsman_2_title';
   static const String servicesCraftsman3Name = 'services_craftsman_3_name';
   static const String servicesCraftsman3Title = 'services_craftsman_3_title';
+
+  // Craftsman profile
+  static const String craftsmanProfileAboutTitle = 'craftsman_profile_about_title';
+  static const String craftsmanProfilePortfolioTitle =
+      'craftsman_profile_portfolio_title';
+  static const String craftsmanProfileLocation = 'craftsman_profile_location';
+  static const String craftsmanProfileMemberSince =
+      'craftsman_profile_member_since';
+  static const String craftsmanProfileSpecialtyFurniture =
+      'craftsman_profile_specialty_furniture';
+  static const String craftsmanProfileSpecialtyCarpentry =
+      'craftsman_profile_specialty_carpentry';
+  static const String craftsmanProfileSpecialtyElectrical =
+      'craftsman_profile_specialty_electrical';
+  static const String craftsmanProfileAboutAhmed = 'craftsman_profile_about_ahmed';
+  static const String craftsmanProfileAboutKhaled =
+      'craftsman_profile_about_khaled';
+  static const String craftsmanProfileAboutOmar = 'craftsman_profile_about_omar';
+  static const String craftsmanProfileRequestQuote =
+      'craftsman_profile_request_quote';
 }

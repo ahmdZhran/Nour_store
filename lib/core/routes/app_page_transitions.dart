@@ -66,4 +66,28 @@ class AppPageTransitions {
       },
     );
   }
+
+  static Route<T> heroDetail<T>({
+    required RouteSettings settings,
+    required WidgetBuilder builder,
+  }) {
+    return PageRouteBuilder<T>(
+      settings: settings,
+      transitionDuration: const Duration(milliseconds: 450),
+      reverseTransitionDuration: reverseDuration,
+      pageBuilder: (context, animation, secondaryAnimation) => builder(context),
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        final curved = CurvedAnimation(
+          parent: animation,
+          curve: const Interval(0.2, 1, curve: Curves.easeOutCubic),
+          reverseCurve: Curves.easeInCubic,
+        );
+
+        return FadeTransition(
+          opacity: curved,
+          child: child,
+        );
+      },
+    );
+  }
 }

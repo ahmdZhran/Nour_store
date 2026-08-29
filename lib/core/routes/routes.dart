@@ -10,4 +10,5 @@ class Routes {
   static const String storeHome = '/store-home';
   static const String servicesHome = '/services-home';
   static const String marketplaceHome = '/marketplace-home';
+  static const String craftsmanProfile = '/craftsman-profile';
 }

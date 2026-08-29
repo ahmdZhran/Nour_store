@@ -75,6 +75,7 @@ flutter:
     - lang/
     - assets/images/gateway/
     - assets/images/services/
+    - assets/images/craftsman_profile/
     - assets/design/stitch/
 
   # An image asset can refer to one or more resolution-specific "variants", see
