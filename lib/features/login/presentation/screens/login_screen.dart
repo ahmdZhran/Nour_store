@@ -370,7 +370,7 @@ class _SignUpPrompt extends StatelessWidget {
         isDark ? ThemeColors.darkTextSecondary : ThemeColors.lightTextSecondary;
 
     return GestureDetector(
-      onTap: () => Navigator.pushNamed(context, Routes.register),
+      onTap: () => Navigator.pushReplacementNamed(context, Routes.register),
       child: Text.rich(
         TextSpan(
           children: [

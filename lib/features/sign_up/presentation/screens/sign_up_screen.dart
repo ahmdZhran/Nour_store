@@ -462,7 +462,7 @@ class _LoginPrompt extends StatelessWidget {
         isDark ? ThemeColors.darkTextSecondary : ThemeColors.lightTextSecondary;
 
     return GestureDetector(
-      onTap: () => Navigator.pushNamed(context, Routes.login),
+      onTap: () => Navigator.pushReplacementNamed(context, Routes.login),
       child: Text.rich(
         TextSpan(
           children: [
