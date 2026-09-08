@@ -96,6 +96,11 @@ class AppStrings {
   static const String fullName = 'full_name';
   static const String fullNameHint = 'full_name_hint';
   static const String registerEmailHint = 'register_email_hint';
+  static const String registerPhoneLabel = 'register_phone_label';
+  static const String registerPhoneHint = 'register_phone_hint';
+  static const String registerCreatePassword = 'register_create_password';
+  static const String registerCreatePasswordHint =
+      'register_create_password_hint';
   static const String confirmPassword = 'confirm_password';
   static const String confirmPasswordHint = 'confirm_password_hint';
   static const String createAccount = 'create_account';
