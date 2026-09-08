@@ -1,8 +1,6 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:nour_store/core/responsive/responsive_sizing.dart';
-import 'package:nour_store/core/theme/theme_colors.dart';
+
 
 class CraftsmanPortfolioGridWidget extends StatelessWidget {
   const CraftsmanPortfolioGridWidget({

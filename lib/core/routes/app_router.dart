@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nour_store/core/routes/app_page_transitions.dart';
 import 'package:nour_store/core/routes/routes.dart';
+import 'package:nour_store/features/login/presentation/screens/login_screen.dart';
+import 'package:nour_store/features/sign_up/presentation/screens/sign_up_screen.dart';
 import 'package:nour_store/features/main_selection/presentation/screens/main_selection_screen.dart';
 import 'package:nour_store/features/marketplace/presentation/screens/marketplace_home_screen.dart';
 import 'package:nour_store/features/services/presentation/models/craftsman_profile_mock_data.dart';
@@ -31,6 +33,16 @@ class AppRouter {
         return MaterialPageRoute(
           settings: settings,
           builder: (_) => const MarketplaceHomeScreen(),
+        );
+      case Routes.login:
+        return AppPageTransitions.fadeSlideUp(
+          settings: settings,
+          builder: (_) => const LoginScreen(),
+        );
+      case Routes.register:
+        return AppPageTransitions.fadeSlideUp(
+          settings: settings,
+          builder: (_) => const RegisterScreen(),
         );
       case Routes.craftsmanProfile:
         final craftsman = settings.arguments! as FeaturedCraftsmanItem;

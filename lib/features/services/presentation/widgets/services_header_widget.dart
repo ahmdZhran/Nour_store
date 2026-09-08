@@ -24,8 +24,8 @@ class ServicesHeaderWidget extends StatelessWidget {
 
     return Padding(
       padding: EdgeInsetsDirectional.only(
-        top: context.rh(24),
-        bottom: context.rh(16),
+        top: context.rh(16),
+        bottom: context.rh(12),
       ),
       child: Row(
         children: [

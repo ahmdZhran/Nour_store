@@ -8,7 +8,7 @@ import 'package:nour_store/core/utilies/app_text_styles.dart';
 class ServicesSearchBarWidget extends StatelessWidget {
   const ServicesSearchBarWidget({super.key});
 
-  static const double _height = 48;
+  static const double _height = 44;
   static const double _borderRadius = 14;
 
   @override

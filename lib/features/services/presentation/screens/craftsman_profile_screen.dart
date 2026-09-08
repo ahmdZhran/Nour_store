@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:nour_store/core/languages/localization_extension.dart';
 import 'package:nour_store/core/responsive/responsive_content_shell.dart';
 import 'package:nour_store/core/responsive/responsive_sizing.dart';
+import 'package:nour_store/core/routes/routes.dart';
 import 'package:nour_store/core/theme/theme_colors.dart';
 import 'package:nour_store/core/utilies/app_strings.dart';
 import 'package:nour_store/core/utilies/app_text_styles.dart';
@@ -174,7 +175,7 @@ class _QuoteFab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton.extended(
-      onPressed: () {},
+      onPressed: () => Navigator.pushNamed(context, Routes.register),
       backgroundColor: ThemeColors.goldPrimary,
       foregroundColor: ThemeColors.blackColorF1,
       elevation: 8,

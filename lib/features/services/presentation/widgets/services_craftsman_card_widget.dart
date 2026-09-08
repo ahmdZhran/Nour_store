@@ -16,9 +16,9 @@ class ServicesCraftsmanCardWidget extends StatelessWidget {
   final FeaturedCraftsmanItem craftsman;
   final VoidCallback? onTap;
 
-  static const double _width = 160;
-  static const double _height = 220;
-  static const double _imageHeight = 150;
+  static const double _width = 170;
+  static const double _height = 160;
+  static const double _imageHeight = 96;
   static const double _borderRadius = 12;
 
   @override
@@ -66,7 +66,10 @@ class ServicesCraftsmanCardWidget extends StatelessWidget {
               ),
               Expanded(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.all(context.rw(12)),
+                  padding: EdgeInsetsDirectional.symmetric(
+                    horizontal: context.rw(10),
+                    vertical: context.rh(6),
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -78,6 +81,7 @@ class ServicesCraftsmanCardWidget extends StatelessWidget {
                         style: AppTextStyles.servicesCraftsmanName.copyWith(
                           color: textPrimary,
                           fontSize: context.rsp(14),
+                          height: 1.1,
                         ),
                       ),
                       SizedBox(height: context.rh(2)),
@@ -88,6 +92,7 @@ class ServicesCraftsmanCardWidget extends StatelessWidget {
                         style: AppTextStyles.servicesCraftsmanTitle.copyWith(
                           color: textSecondary,
                           fontSize: context.rsp(12),
+                          height: 1.1,
                         ),
                       ),
                     ],

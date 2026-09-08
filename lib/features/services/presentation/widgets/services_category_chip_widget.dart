@@ -15,10 +15,10 @@ class ServicesCategoryChipWidget extends StatelessWidget {
   final ServiceCategoryItem category;
   final VoidCallback? onTap;
 
-  static const double _width = 90;
-  static const double _height = 95;
+  static const double _width = 84;
+  static const double _height = 82;
   static const double _borderRadius = 12;
-  static const double _iconContainerSize = 40;
+  static const double _iconContainerSize = 36;
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +58,7 @@ class ServicesCategoryChipWidget extends StatelessWidget {
                   color: ThemeColors.goldPrimary,
                 ),
               ),
-              SizedBox(height: context.rh(8)),
+              SizedBox(height: context.rh(6)),
               Padding(
                 padding: EdgeInsetsDirectional.symmetric(
                   horizontal: context.rw(4),
