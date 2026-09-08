@@ -22,7 +22,7 @@ class _ServicesHeroBannerWidgetState extends State<ServicesHeroBannerWidget> {
   late final PageController _pageController;
   int _currentPage = 0;
 
-  static const double _bannerHeight = 180;
+  static const double _bannerHeight = 150;
   static const double _borderRadius = 20;
 
   @override
@@ -56,7 +56,7 @@ class _ServicesHeroBannerWidgetState extends State<ServicesHeroBannerWidget> {
             ),
           ),
         ),
-        SizedBox(height: context.rh(16)),
+        SizedBox(height: context.rh(10)),
         _PaginationDots(
           count: widget.banners.length,
           currentIndex: _currentPage,
@@ -104,7 +104,7 @@ class _HeroBannerSlide extends StatelessWidget {
         PositionedDirectional(
           start: context.rw(20),
           end: context.rw(20),
-          bottom: context.rh(20),
+          bottom: context.rh(14),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
@@ -112,7 +112,7 @@ class _HeroBannerSlide extends StatelessWidget {
               Text(
                 context.tr(banner.headlineKey),
                 style: AppTextStyles.heroOverlayTitle.copyWith(
-                  fontSize: context.rsp(20),
+                  fontSize: context.rsp(18),
                 ),
               ),
               SizedBox(height: context.rh(4)),

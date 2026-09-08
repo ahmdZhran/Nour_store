@@ -16,8 +16,8 @@ import 'package:nour_store/features/services/presentation/widgets/services_searc
 class ServicesDashboardTab extends StatelessWidget {
   const ServicesDashboardTab({super.key});
 
-  static const double _sectionGap = 32;
-  static const double _chipGap = 16;
+  static const double _sectionGap = 24;
+  static const double _chipGap = 12;
 
   @override
   Widget build(BuildContext context) {
@@ -27,13 +27,13 @@ class ServicesDashboardTab extends StatelessWidget {
 
     return ResponsiveContentShell(
       child: SingleChildScrollView(
-        padding: EdgeInsets.only(bottom: context.rh(100)),
+        padding: EdgeInsets.only(bottom: context.rh(88)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const ServicesHeaderWidget(),
             const ServicesSearchBarWidget(),
-            SizedBox(height: context.rh(24)),
+            SizedBox(height: context.rh(16)),
             ServicesHeroBannerWidget(
               banners: ServicesDashboardMockData.heroBanners,
             ),
@@ -42,12 +42,12 @@ class ServicesDashboardTab extends StatelessWidget {
               context.tr(AppStrings.servicesCategoriesTitle),
               style: AppTextStyles.sectionTitle.copyWith(
                 color: textPrimary,
-                fontSize: context.rsp(20),
+                fontSize: context.rsp(18),
               ),
             ),
-            SizedBox(height: context.rh(16)),
+            SizedBox(height: context.rh(12)),
             SizedBox(
-              height: context.rh(95),
+              height: context.rh(82),
               child: ListView.separated(
                 scrollDirection: Axis.horizontal,
                 itemCount: ServicesDashboardMockData.categories.length,
@@ -65,12 +65,12 @@ class ServicesDashboardTab extends StatelessWidget {
               context.tr(AppStrings.servicesFeaturedCraftsmenTitle),
               style: AppTextStyles.sectionTitle.copyWith(
                 color: textPrimary,
-                fontSize: context.rsp(20),
+                fontSize: context.rsp(18),
               ),
             ),
-            SizedBox(height: context.rh(16)),
+            SizedBox(height: context.rh(12)),
             SizedBox(
-              height: context.rh(220),
+              height: context.rh(160),
               child: ListView.separated(
                 scrollDirection: Axis.horizontal,
                 itemCount: ServicesDashboardMockData.featuredCraftsmen.length,
