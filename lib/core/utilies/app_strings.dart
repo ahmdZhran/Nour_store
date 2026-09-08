@@ -373,4 +373,68 @@ class AppStrings {
   static const String craftsmanProfileAboutOmar = 'craftsman_profile_about_omar';
   static const String craftsmanProfileRequestQuote =
       'craftsman_profile_request_quote';
+
+  // Service request
+  static const String serviceRequestTitle = 'service_request_title';
+  static const String serviceRequestStepOneOfTwo =
+      'service_request_step_one_of_two';
+  static const String serviceRequestTellUs = 'service_request_tell_us';
+  static const String serviceRequestDetailsHint =
+      'service_request_details_hint';
+  static const String serviceRequestProjectTitle =
+      'service_request_project_title';
+  static const String serviceRequestProjectTitleHint =
+      'service_request_project_title_hint';
+  static const String serviceRequestDescription =
+      'service_request_description';
+  static const String serviceRequestDescriptionHint =
+      'service_request_description_hint';
+  static const String serviceRequestBudget = 'service_request_budget';
+  static const String serviceRequestBudgetHint = 'service_request_budget_hint';
+  static const String serviceRequestStartDate = 'service_request_start_date';
+  static const String serviceRequestStartDateHint =
+      'service_request_start_date_hint';
+  static const String serviceRequestAttachPhotos =
+      'service_request_attach_photos';
+  static const String serviceRequestOptional = 'service_request_optional';
+  static const String serviceRequestDropFile = 'service_request_drop_file';
+  static const String serviceRequestChooseFiles =
+      'service_request_choose_files';
+  static const String serviceRequestFileTypes = 'service_request_file_types';
+  static const String serviceRequestFieldRequired =
+      'service_request_field_required';
+  static const String serviceRequestStepTwoOfTwo =
+      'service_request_step_two_of_two';
+  static const String serviceRequestConfirmTitle =
+      'service_request_confirm_title';
+  static const String serviceRequestConfirmBody =
+      'service_request_confirm_body';
+  static const String serviceRequestPhoneHint = 'service_request_phone_hint';
+  static const String serviceRequestReviewTitle =
+      'service_request_review_title';
+  static const String serviceRequestRequestedCraftsman =
+      'service_request_requested_craftsman';
+  static const String serviceRequestCraftsmanTitle =
+      'service_request_craftsman_title';
+  static const String serviceRequestEdit = 'service_request_edit';
+  static const String serviceRequestProjectDetails =
+      'service_request_project_details';
+  static const String serviceRequestAddressSummary =
+      'service_request_address_summary';
+  static const String serviceRequestBudgetSummary =
+      'service_request_budget_summary';
+  static const String serviceRequestStartDateSummary =
+      'service_request_start_date_summary';
+  static const String serviceRequestPrevious = 'service_request_previous';
+  static const String serviceRequestSendNow = 'service_request_send_now';
+  static const String serviceRequestSuccessTitle =
+      'service_request_success_title';
+  static const String serviceRequestSuccessBody =
+      'service_request_success_body';
+  static const String serviceRequestWhatNext = 'service_request_what_next';
+  static const String serviceRequestWhatNextStepOne =
+      'service_request_what_next_step_one';
+  static const String serviceRequestWhatNextStepTwo =
+      'service_request_what_next_step_two';
+  static const String serviceRequestBackHome = 'service_request_back_home';
 }

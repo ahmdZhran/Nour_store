@@ -133,4 +133,10 @@ class AppTextStyles {
     fontSize: 12.sp,
     fontWeight: FontWeight.w500,
   );
+
+  static TextStyle serviceRequestHelper = TextStyle(
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w400,
+    height: 1.4,
+  );
 }

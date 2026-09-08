@@ -9,6 +9,7 @@ import 'package:nour_store/features/services/presentation/models/craftsman_profi
 import 'package:nour_store/features/services/presentation/models/services_dashboard_mock_data.dart';
 import 'package:nour_store/features/services/presentation/screens/craftsman_profile_screen.dart';
 import 'package:nour_store/features/services/presentation/screens/services_home_screen.dart';
+import 'package:nour_store/features/service_request/presentation/screens/service_request_screen.dart';
 import 'package:nour_store/features/store/presentation/pages/store_home_screen.dart';
 
 class AppRouter {
@@ -43,6 +44,11 @@ class AppRouter {
         return AppPageTransitions.fadeSlideUp(
           settings: settings,
           builder: (_) => const RegisterScreen(),
+        );
+      case Routes.serviceRequest:
+        return AppPageTransitions.fadeSlideUp(
+          settings: settings,
+          builder: (_) => const ServiceRequestScreen(),
         );
       case Routes.craftsmanProfile:
         final craftsman = settings.arguments! as FeaturedCraftsmanItem;

@@ -30,7 +30,9 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void _submit() {
-    _formKey.currentState?.validate();
+    final isValid = _formKey.currentState?.validate() ?? false;
+    if (!isValid) return;
+    Navigator.pushReplacementNamed(context, Routes.serviceRequest);
   }
 
   @override
