@@ -4,8 +4,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:nour_store/core/languages/app_localization_setup.dart';
 import 'package:nour_store/core/languages/lang_code.dart';
 import 'package:nour_store/core/widgets/coming_soon_content.dart';
+import 'package:nour_store/features/services/presentation/screens/services_categories_tab.dart';
 import 'package:nour_store/features/services/presentation/screens/services_home_screen.dart';
 import 'package:nour_store/features/services/presentation/widgets/services_category_chip_widget.dart';
+import 'package:nour_store/features/services/presentation/widgets/services_category_grid_card.dart';
 import 'package:nour_store/features/services/presentation/widgets/services_craftsman_card_widget.dart';
 import 'package:nour_store/features/services/presentation/widgets/services_dashboard_tab.dart';
 import 'package:nour_store/features/services/presentation/widgets/services_floating_nav_bar.dart';
@@ -62,7 +64,9 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('services_nav_1')));
     await tester.pumpAndSettle();
 
-    expect(find.byType(ComingSoonContent), findsOneWidget);
-    expect(find.byType(ServicesDashboardTab), findsNothing);
+    expect(find.byType(ServicesCategoriesTab), findsOneWidget);
+    expect(find.byType(ServicesCategoryGridCard), findsAtLeastNWidgets(4));
+    expect(find.text('الفئات'), findsWidgets);
+    expect(find.byType(ComingSoonContent), findsNothing);
   });
 }

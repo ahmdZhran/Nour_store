@@ -347,6 +347,55 @@ class AppStrings {
   static const String servicesCategoryPlumbing = 'services_category_plumbing';
   static const String servicesCategoryElectrical =
       'services_category_electrical';
+  static const String servicesCategoryInteriorDesigner =
+      'services_category_interior_designer';
+  static const String servicesCategoryContracting =
+      'services_category_contracting';
+  static const String servicesCategoryPainting =
+      'services_category_painting';
+  static const String servicesSubcategoryAll = 'services_subcategory_all';
+  static const String servicesSubcategoryFurniture =
+      'services_subcategory_furniture';
+  static const String servicesSubcategoryOffice =
+      'services_subcategory_office';
+  static const String servicesSubcategoryInstallation =
+      'services_subcategory_installation';
+  static const String servicesSubcategoryRepair =
+      'services_subcategory_repair';
+  static const String servicesSubcategoryDesign = 'services_subcategory_design';
+  static const String servicesSubcategoryPrinting =
+      'services_subcategory_printing';
+  static const String servicesSubcategorySocialMedia =
+      'services_subcategory_social_media';
+  static const String servicesSubcategoryVideo = 'services_subcategory_video';
+  static const String servicesSubcategorySupervision =
+      'services_subcategory_supervision';
+  static const String servicesSubcategoryBlueprints =
+      'services_subcategory_blueprints';
+  static const String servicesSubcategoryConsultation =
+      'services_subcategory_consultation';
+  static const String servicesSubcategoryInteriorDesign =
+      'services_subcategory_interior_design';
+  static const String servicesSubcategoryFinishing =
+      'services_subcategory_finishing';
+  static const String servicesSubcategory3d = 'services_subcategory_3d';
+  static const String servicesSubcategoryMaintenance =
+      'services_subcategory_maintenance';
+  static const String servicesSubcategoryWiring = 'services_subcategory_wiring';
+  static const String servicesSubcategoryEmergency =
+      'services_subcategory_emergency';
+  static const String servicesSubcategoryBuilding =
+      'services_subcategory_building';
+  static const String servicesSubcategoryRenovation =
+      'services_subcategory_renovation';
+  static const String servicesSubcategoryPaint = 'services_subcategory_paint';
+  static const String servicesSubcategoryDecor = 'services_subcategory_decor';
+  static const String servicesSubcategoryWallpaper =
+      'services_subcategory_wallpaper';
+  static const String servicesSubcategoryLeak = 'services_subcategory_leak';
+  static const String servicesSubcategoryHeaters =
+      'services_subcategory_heaters';
+  static const String servicesViewProfile = 'services_view_profile';
   static const String servicesCraftsman1Name = 'services_craftsman_1_name';
   static const String servicesCraftsman1Title = 'services_craftsman_1_title';
   static const String servicesCraftsman2Name = 'services_craftsman_2_name';

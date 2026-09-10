@@ -53,9 +53,15 @@ class ServicesDashboardTab extends StatelessWidget {
                 itemCount: ServicesDashboardMockData.categories.length,
                 separatorBuilder: (_, _) => SizedBox(width: context.rw(_chipGap)),
                 itemBuilder: (context, index) {
+                  final category =
+                      ServicesDashboardMockData.categories[index];
                   return ServicesCategoryChipWidget(
-                    category: ServicesDashboardMockData.categories[index],
-                    onTap: () {},
+                    category: category,
+                    onTap: () => Navigator.pushNamed(
+                      context,
+                      Routes.categoryProviders,
+                      arguments: category,
+                    ),
                   );
                 },
               ),
