@@ -9,8 +9,10 @@ import 'package:nour_store/features/services/presentation/models/craftsman_profi
 import 'package:nour_store/features/services/presentation/models/services_dashboard_mock_data.dart';
 import 'package:nour_store/features/services/presentation/models/services_orders_mock_data.dart';
 import 'package:nour_store/features/services/presentation/screens/category_providers_screen.dart';
+import 'package:nour_store/features/services/presentation/screens/change_password_screen.dart';
 import 'package:nour_store/features/services/presentation/screens/craftsman_profile_screen.dart';
 import 'package:nour_store/features/services/presentation/screens/order_details_screen.dart';
+import 'package:nour_store/features/services/presentation/screens/personal_data_screen.dart';
 import 'package:nour_store/features/services/presentation/screens/services_home_screen.dart';
 import 'package:nour_store/features/service_request/presentation/screens/service_request_screen.dart';
 import 'package:nour_store/features/store/presentation/pages/store_home_screen.dart';
@@ -70,6 +72,16 @@ class AppRouter {
             key: ValueKey(order.id),
             order: order,
           ),
+        );
+      case Routes.personalData:
+        return AppPageTransitions.fadeSlideUp(
+          settings: settings,
+          builder: (_) => const PersonalDataScreen(),
+        );
+      case Routes.changePassword:
+        return AppPageTransitions.fadeSlideUp(
+          settings: settings,
+          builder: (_) => const ChangePasswordScreen(),
         );
       case Routes.craftsmanProfile:
         final craftsman = settings.arguments! as FeaturedCraftsmanItem;

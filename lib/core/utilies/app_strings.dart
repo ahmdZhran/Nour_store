@@ -302,6 +302,23 @@ class AppStrings {
   static const String language = 'language';
   static const String arabic = 'arabic';
   static const String english = 'english';
+  static const String profilePersonalSettings = 'profile_personal_settings';
+  static const String profileGeneral = 'profile_general';
+  static const String profilePersonalData = 'profile_personal_data';
+  static const String profileChangePassword = 'profile_change_password';
+  static const String profileOurServices = 'profile_our_services';
+  static const String profileUploadPhoto = 'profile_upload_photo';
+  static const String profileChangeDetails = 'profile_change_details';
+  static const String profileSaveChanges = 'profile_save_changes';
+  static const String profilePhoneLabel = 'profile_phone_label';
+  static const String profileCurrentPassword = 'profile_current_password';
+  static const String profileNewPassword = 'profile_new_password';
+  static const String profileConfirmPasswordAction =
+      'profile_confirm_password_action';
+  static const String profileUploadComingSoon = 'profile_upload_coming_soon';
+  static const String profileSaveSuccess = 'profile_save_success';
+  static const String profilePasswordChangeSuccess =
+      'profile_password_change_success';
 
   // Nav tabs
   static const String home = 'home';

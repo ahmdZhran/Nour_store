@@ -7,7 +7,9 @@ import 'package:nour_store/core/widgets/coming_soon_content.dart';
 import 'package:nour_store/features/services/presentation/screens/services_categories_tab.dart';
 import 'package:nour_store/features/services/presentation/screens/services_home_screen.dart';
 import 'package:nour_store/features/services/presentation/screens/services_orders_tab.dart';
+import 'package:nour_store/features/services/presentation/screens/services_profile_tab.dart';
 import 'package:nour_store/features/services/presentation/widgets/order_card_widget.dart';
+import 'package:nour_store/features/services/presentation/widgets/profile_menu_tile.dart';
 import 'package:nour_store/features/services/presentation/widgets/services_category_chip_widget.dart';
 import 'package:nour_store/features/services/presentation/widgets/services_category_grid_card.dart';
 import 'package:nour_store/features/services/presentation/widgets/services_craftsman_card_widget.dart';
@@ -78,6 +80,17 @@ void main() {
     expect(find.text('متابعة طلباتي'), findsOneWidget);
     expect(find.text('طلباتي الجديدة'), findsOneWidget);
     expect(find.byType(OrderCardWidget), findsAtLeastNWidgets(1));
+    expect(find.byType(ComingSoonContent), findsNothing);
+
+    await tester.tap(find.byKey(const ValueKey('services_nav_3')));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(ServicesProfileTab), findsOneWidget);
+    expect(find.text('ملفي'), findsWidgets);
+    expect(find.text('البيانات الشخصية'), findsOneWidget);
+    expect(find.text('تغيير كلمة المرور'), findsOneWidget);
+    expect(find.text('تسجيل الخروج'), findsOneWidget);
+    expect(find.byType(ProfileMenuTile), findsAtLeastNWidgets(2));
     expect(find.byType(ComingSoonContent), findsNothing);
   });
 }
