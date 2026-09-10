@@ -7,6 +7,7 @@ import 'package:nour_store/features/main_selection/presentation/screens/main_sel
 import 'package:nour_store/features/marketplace/presentation/screens/marketplace_home_screen.dart';
 import 'package:nour_store/features/services/presentation/models/craftsman_profile_mock_data.dart';
 import 'package:nour_store/features/services/presentation/models/services_dashboard_mock_data.dart';
+import 'package:nour_store/features/services/presentation/screens/category_providers_screen.dart';
 import 'package:nour_store/features/services/presentation/screens/craftsman_profile_screen.dart';
 import 'package:nour_store/features/services/presentation/screens/services_home_screen.dart';
 import 'package:nour_store/features/service_request/presentation/screens/service_request_screen.dart';
@@ -49,6 +50,15 @@ class AppRouter {
         return AppPageTransitions.fadeSlideUp(
           settings: settings,
           builder: (_) => const ServiceRequestScreen(),
+        );
+      case Routes.categoryProviders:
+        final category = settings.arguments! as ServiceCategoryItem;
+        return AppPageTransitions.fadeSlideUp(
+          settings: settings,
+          builder: (_) => CategoryProvidersScreen(
+            key: ValueKey(category.id),
+            category: category,
+          ),
         );
       case Routes.craftsmanProfile:
         final craftsman = settings.arguments! as FeaturedCraftsmanItem;
