@@ -7,8 +7,10 @@ import 'package:nour_store/features/main_selection/presentation/screens/main_sel
 import 'package:nour_store/features/marketplace/presentation/screens/marketplace_home_screen.dart';
 import 'package:nour_store/features/services/presentation/models/craftsman_profile_mock_data.dart';
 import 'package:nour_store/features/services/presentation/models/services_dashboard_mock_data.dart';
+import 'package:nour_store/features/services/presentation/models/services_orders_mock_data.dart';
 import 'package:nour_store/features/services/presentation/screens/category_providers_screen.dart';
 import 'package:nour_store/features/services/presentation/screens/craftsman_profile_screen.dart';
+import 'package:nour_store/features/services/presentation/screens/order_details_screen.dart';
 import 'package:nour_store/features/services/presentation/screens/services_home_screen.dart';
 import 'package:nour_store/features/service_request/presentation/screens/service_request_screen.dart';
 import 'package:nour_store/features/store/presentation/pages/store_home_screen.dart';
@@ -58,6 +60,15 @@ class AppRouter {
           builder: (_) => CategoryProvidersScreen(
             key: ValueKey(category.id),
             category: category,
+          ),
+        );
+      case Routes.orderDetails:
+        final order = settings.arguments! as ServiceOrderItem;
+        return AppPageTransitions.fadeSlideUp(
+          settings: settings,
+          builder: (_) => OrderDetailsScreen(
+            key: ValueKey(order.id),
+            order: order,
           ),
         );
       case Routes.craftsmanProfile:

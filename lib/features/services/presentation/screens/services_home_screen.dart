@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nour_store/core/widgets/coming_soon_content.dart';
 import 'package:nour_store/features/services/presentation/screens/services_categories_tab.dart';
+import 'package:nour_store/features/services/presentation/screens/services_orders_tab.dart';
 import 'package:nour_store/features/services/presentation/widgets/services_dashboard_tab.dart';
 import 'package:nour_store/features/services/presentation/widgets/services_floating_nav_bar.dart';
 
@@ -25,7 +26,7 @@ class _ServicesHomeScreenState extends State<ServicesHomeScreen> {
               children: const [
                 ServicesDashboardTab(),
                 ServicesCategoriesTab(),
-                ResponsiveComingSoonTab(icon: Icons.assignment_outlined),
+                ServicesOrdersTab(),
                 ResponsiveComingSoonTab(icon: Icons.person_outline),
               ],
             ),

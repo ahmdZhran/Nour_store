@@ -6,6 +6,8 @@ import 'package:nour_store/core/languages/lang_code.dart';
 import 'package:nour_store/core/widgets/coming_soon_content.dart';
 import 'package:nour_store/features/services/presentation/screens/services_categories_tab.dart';
 import 'package:nour_store/features/services/presentation/screens/services_home_screen.dart';
+import 'package:nour_store/features/services/presentation/screens/services_orders_tab.dart';
+import 'package:nour_store/features/services/presentation/widgets/order_card_widget.dart';
 import 'package:nour_store/features/services/presentation/widgets/services_category_chip_widget.dart';
 import 'package:nour_store/features/services/presentation/widgets/services_category_grid_card.dart';
 import 'package:nour_store/features/services/presentation/widgets/services_craftsman_card_widget.dart';
@@ -67,6 +69,15 @@ void main() {
     expect(find.byType(ServicesCategoriesTab), findsOneWidget);
     expect(find.byType(ServicesCategoryGridCard), findsAtLeastNWidgets(4));
     expect(find.text('الفئات'), findsWidgets);
+    expect(find.byType(ComingSoonContent), findsNothing);
+
+    await tester.tap(find.byKey(const ValueKey('services_nav_2')));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(ServicesOrdersTab), findsOneWidget);
+    expect(find.text('متابعة طلباتي'), findsOneWidget);
+    expect(find.text('طلباتي الجديدة'), findsOneWidget);
+    expect(find.byType(OrderCardWidget), findsAtLeastNWidgets(1));
     expect(find.byType(ComingSoonContent), findsNothing);
   });
 }

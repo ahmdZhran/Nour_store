@@ -12,5 +12,6 @@ class Routes {
   static const String marketplaceHome = '/marketplace-home';
   static const String craftsmanProfile = '/craftsman-profile';
   static const String categoryProviders = '/category-providers';
+  static const String orderDetails = '/order-details';
   static const String serviceRequest = '/service-request';
 }
