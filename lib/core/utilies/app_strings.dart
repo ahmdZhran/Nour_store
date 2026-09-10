@@ -403,6 +403,88 @@ class AppStrings {
   static const String servicesCraftsman3Name = 'services_craftsman_3_name';
   static const String servicesCraftsman3Title = 'services_craftsman_3_title';
 
+  // Orders tracking
+  static const String ordersTrackingTitle = 'orders_tracking_title';
+  static const String ordersFilterNew = 'orders_filter_new';
+  static const String ordersFilterSetInspection = 'orders_filter_set_inspection';
+  static const String ordersFilterUnderInspection =
+      'orders_filter_under_inspection';
+  static const String ordersFilterInProgress = 'orders_filter_in_progress';
+  static const String ordersFilterCompleted = 'orders_filter_completed';
+  static const String ordersFilterRejected = 'orders_filter_rejected';
+  static const String ordersBadgeNew = 'orders_badge_new';
+  static const String ordersBadgeSetInspection = 'orders_badge_set_inspection';
+  static const String ordersBadgeUnderInspection =
+      'orders_badge_under_inspection';
+  static const String ordersBadgeInProgress = 'orders_badge_in_progress';
+  static const String ordersBadgeCompleted = 'orders_badge_completed';
+  static const String ordersBadgeRejected = 'orders_badge_rejected';
+  static const String ordersOrderDatePrefix = 'orders_order_date_prefix';
+  static const String ordersOrderNumberPrefix = 'orders_order_number_prefix';
+  static const String ordersViewDetails = 'orders_view_details';
+  static const String ordersProjectStages = 'orders_project_stages';
+  static const String ordersStageSentTitle = 'orders_stage_sent_title';
+  static const String ordersStageSentDesc = 'orders_stage_sent_desc';
+  static const String ordersStageAcceptedTitle = 'orders_stage_accepted_title';
+  static const String ordersStageAcceptedDesc = 'orders_stage_accepted_desc';
+  static const String ordersStageInspectionTitle =
+      'orders_stage_inspection_title';
+  static const String ordersStageInspectionDesc =
+      'orders_stage_inspection_desc';
+  static const String ordersStageInProgressTitle =
+      'orders_stage_in_progress_title';
+  static const String ordersStageInProgressDesc =
+      'orders_stage_in_progress_desc';
+  static const String ordersStagePriceAdjustedTitle =
+      'orders_stage_price_adjusted_title';
+  static const String ordersStagePriceAdjustedDesc =
+      'orders_stage_price_adjusted_desc';
+  static const String ordersStageCompletedTitle =
+      'orders_stage_completed_title';
+  static const String ordersStageCompletedDesc =
+      'orders_stage_completed_desc';
+  static const String ordersStagePaidTitle = 'orders_stage_paid_title';
+  static const String ordersStagePaidDesc = 'orders_stage_paid_desc';
+  static const String ordersRejectedTitle = 'orders_rejected_title';
+  static const String ordersRejectionReasonLabel =
+      'orders_rejection_reason_label';
+  static const String ordersAgreedCost = 'orders_agreed_cost';
+  static const String ordersPickAppointmentTitle =
+      'orders_pick_appointment_title';
+  static const String ordersConfirmAppointment = 'orders_confirm_appointment';
+  static const String ordersAppointmentConfirmed =
+      'orders_appointment_confirmed';
+  static const String ordersServiceProvider = 'orders_service_provider';
+  static const String ordersAgreementSummary = 'orders_agreement_summary';
+  static const String ordersProposedCost = 'orders_proposed_cost';
+  static const String ordersViewHisProfile = 'orders_view_his_profile';
+  static const String ordersNewPrice = 'orders_new_price';
+  static const String ordersPricingReason = 'orders_pricing_reason';
+  static const String ordersApprovePrice = 'orders_approve_price';
+  static const String ordersCancelOrder = 'orders_cancel_order';
+  static const String ordersPriceApprovedTitle = 'orders_price_approved_title';
+  static const String ordersPriceApprovedDesc = 'orders_price_approved_desc';
+  static const String ordersCancelledTitle = 'orders_cancelled_title';
+  static const String ordersCancelledDesc = 'orders_cancelled_desc';
+  static const String ordersDialogOk = 'orders_dialog_ok';
+  static const String ordersSampleTitle = 'orders_sample_title';
+  static const String ordersSampleDate = 'orders_sample_date';
+  static const String ordersSampleCraftsmanName = 'orders_sample_craftsman_name';
+  static const String ordersSampleCraftsmanTitle =
+      'orders_sample_craftsman_title';
+  static const String ordersSampleCost = 'orders_sample_cost';
+  static const String ordersSampleNewCost = 'orders_sample_new_cost';
+  static const String ordersSamplePricingReason =
+      'orders_sample_pricing_reason';
+  static const String ordersSampleRejectionReason =
+      'orders_sample_rejection_reason';
+  static const String ordersSlot1Day = 'orders_slot_1_day';
+  static const String ordersSlot1Time = 'orders_slot_1_time';
+  static const String ordersSlot2Day = 'orders_slot_2_day';
+  static const String ordersSlot2Time = 'orders_slot_2_time';
+  static const String ordersSlot3Day = 'orders_slot_3_day';
+  static const String ordersSlot3Time = 'orders_slot_3_time';
+
   // Craftsman profile
   static const String craftsmanProfileAboutTitle = 'craftsman_profile_about_title';
   static const String craftsmanProfilePortfolioTitle =
