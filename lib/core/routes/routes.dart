@@ -13,5 +13,7 @@ class Routes {
   static const String craftsmanProfile = '/craftsman-profile';
   static const String categoryProviders = '/category-providers';
   static const String orderDetails = '/order-details';
+  static const String personalData = '/personal-data';
+  static const String changePassword = '/change-password';
   static const String serviceRequest = '/service-request';
 }
